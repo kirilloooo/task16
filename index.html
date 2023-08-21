@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Місце проживання</title>
+</head>
+<body>
+
+<script>
+    // Запитати користувача про місце проживання
+    var place = prompt("Де ви живете?");
+
+    // Вивести на сторінці
+    var outputElement = document.createElement('p');
+    outputElement.textContent = "Ви живете: " + place;
+    document.body.appendChild(outputElement);
+
+    // Вивести у вікні браузера
+    window.alert("Ви живете: " + place);
+
+    // Вивести в консолі
+    console.log("Ви живете: " + place);
+</script>
+
+<p>Або спробуйте ще такий спосіб: </p><a href="q.html">тицьнути мишою</a>
+
+</body>
+</html>

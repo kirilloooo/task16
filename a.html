@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат</title>
+</head>
+<body>
+
+<script>
+    // Отримати значення city з параметрів URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var city = urlParams.get('city');
+
+    // Вивести повідомлення на сторінці
+    var resultElement = document.createElement('p');
+    resultElement.textContent = "Ти живеш у " + city;
+    document.body.appendChild(resultElement);
+</script>
+
+</body>
+</html>
